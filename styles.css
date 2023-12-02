@@ -106,7 +106,7 @@ header {
     margin-bottom: 6px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     .laptop-design {
         display: none;
     }
@@ -156,6 +156,10 @@ header {
         text-align: center;
     }
 
+    #section-with-services {
+        max-width: 100%;
+    }
+
     .service-box {
         padding: 2rem 1rem;
         top: 70px;
@@ -176,10 +180,6 @@ header {
     #work-examples-carousel {
         flex-wrap: wrap;
     }
-   
-
-
-
 }
 
 .mobile-design {
