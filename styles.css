@@ -113,6 +113,73 @@ header {
     .mobile-design {
         display:block !important;
     }
+
+    header {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 6rem !important;
+        margin-top: 3rem !important;
+    }
+
+    h2 {
+        font-size: 4rem !important;
+        font-weight: 700 !important;
+    }
+
+    h3 {
+        font-size: 2rem !important;
+    }
+
+    h4 {
+        font-size: .8rem !important;
+    }
+
+    p {
+        font-size: 1rem !important;
+    }
+
+    #section-with-photo {
+        flex-wrap: wrap;
+    }
+
+    #my-photo {
+        margin-bottom: 3rem;
+    }
+
+    #discover-div {
+        align-items: center;
+    }
+
+    #discover-div p {
+        text-align: center;
+    }
+
+    .service-box {
+        padding: 2rem 1rem;
+        top: 70px;
+        gap: 20px;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    #boom-icon {
+        right: 5% !important;
+        width: 220px;
+        top: -1% !important;
+    }
+
+    #work-examples-carousel {
+        flex-wrap: wrap;
+    }
+   
+
+
+
 }
 
 .mobile-design {
@@ -334,7 +401,7 @@ h1 {
       opacity: 1;
       transform: translateY(0%);
     }
-  }
+}
 
 #my-photo {
     width: 300px;
@@ -381,9 +448,6 @@ h1 {
     align-items: center;
     overflow: hidden;
 }
-
-
-
 
 #section-with-services {
     display: grid;
@@ -449,6 +513,7 @@ h1 {
     gap: 70px;
     overflow: hidden;
     position: relative;
+    flex-wrap: wrap;
 }
 
 #comp-img {
