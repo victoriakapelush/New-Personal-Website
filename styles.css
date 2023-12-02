@@ -86,6 +86,83 @@ header {
     margin: 0 6%;
 }
 
+.menu-icon {
+    width: 48px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    display: flex;
+}
+
+.menu-icon-line {
+    width: 24px;
+    height: 2px;
+    background-color: var(--black);
+    color: var(--black);
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px) { 
+    .laptop-design {
+        display: none;
+    }
+    .mobile-design {
+        display:block !important;
+    }
+}
+
+.mobile-design {
+    padding: -1 0;
+    margin: 0 0;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+  .ham3 .top {
+    stroke-dasharray: 40 130;
+  }
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
+  }
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
+  }
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+  }
+
 .flex-column {
     display: flex;
     flex-direction: column;
@@ -153,6 +230,34 @@ p {
     background-color: var(--black);
     color: #555353;
 }
+
+#dropdown-menu {
+    background-color: var(--light-grey);
+    height: 100dvh;
+    width: 100dvw;
+}
+
+.hidden-nav {
+    padding-top: 1rem;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.hidden-nav a {
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--black);
+    font-family: Montserrat, sans-serif;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.hidden-nav a:hover {
+    text-decoration: underline;
+    color: var(--black);
+} 
 
 #nav-container {
     align-items: stretch;
@@ -276,6 +381,9 @@ h1 {
     align-items: center;
     overflow: hidden;
 }
+
+
+
 
 #section-with-services {
     display: grid;
@@ -940,3 +1048,8 @@ blockquote {
     font-size: 1.25rem;
 }
 
+@media (max-width: 480px) {
+    header {
+      font-size: 16px;
+    }
+  }

@@ -1,3 +1,5 @@
+//rotate the little star-wheel on the index html page 
+
 window.onscroll = function () {
     scrollRotate();
 };
@@ -7,13 +9,19 @@ function scrollRotate() {
     image.style.transform = "rotate(" + window.scrollY/2 + "deg)";
 }
 
-/*const contactBtn = document.getElementById('contact-button');
+//show and hide navigation bar (mobile version)
 
-contactBtn.addEventListener('click', function() {
-    document.getElementById('contact-form').style.display = "none";
-    const contactBox = document.getElementById('contact-box')
-    const para = document.createElement('p');
-    contactBox.appendChild(para);
-    para.textContent = "Thank you. Your submission has been received."
-})*/
+const navBtn = document.getElementById('nav-btn');
+const dropdownMenu = document.getElementById('dropdown-menu');
+
+navBtn.addEventListener("click", function() {
+    if (dropdownMenu.classList.toggle("hideMenu")) {
+        dropdownMenu.style.display = "none";
+    } else {
+        dropdownMenu.classList.remove("hideMenu");
+        dropdownMenu.style.display = "block";
+    }
+})
+
+
 
