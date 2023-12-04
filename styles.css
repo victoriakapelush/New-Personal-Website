@@ -178,6 +178,18 @@ header {
         height: 70px;
     }
 
+    #comp-img {
+        z-index: 5;
+        width: 200px;
+        height: 300px;
+        filter: grayscale();
+        object-fit: cover;
+        border: 2px solid #000;
+        border-radius: 16px;
+        align-self: flex-end;
+        position: relative;
+    }
+
     #boom-icon {
         right: 5% !important;
         width: 220px;
@@ -525,8 +537,8 @@ h1 {
 
 #comp-img {
     z-index: 5;
-    width: 399.988px;
-    height: 499.013px;
+    width: 25rem;
+    height: 31rem;
     filter: grayscale();
     object-fit: cover;
     border: 2px solid #000;
