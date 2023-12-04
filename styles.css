@@ -185,7 +185,7 @@ header {
     }
 
     #boom-icon {
-        right: 2% !important;
+        right: -2% !important;
         width: 220px;
         top: -1% !important;
     }
