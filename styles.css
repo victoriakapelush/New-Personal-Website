@@ -180,12 +180,12 @@ header {
     }
 
     #comp-img {
-        width: 22rem !important;
+        width: 21.5rem !important;
         height: 28rem !important;
     }
 
     #boom-icon {
-        right: -2% !important;
+        right: -5% !important;
         width: 220px;
         top: -1% !important;
     }
