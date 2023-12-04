@@ -165,6 +165,7 @@ header {
     .title-box {
         position: relative !important;
         padding-bottom: 3rem;
+        text-align: center !important;
     }
 
     .service-box {
@@ -179,15 +180,8 @@ header {
     }
 
     #comp-img {
-        z-index: 5;
-        width: 200px;
-        height: 300px;
-        filter: grayscale();
-        object-fit: cover;
-        border: 2px solid #000;
-        border-radius: 16px;
-        align-self: flex-end;
-        position: relative;
+        width: 20rem !important;
+        height: 26rem !important;
     }
 
     #boom-icon {
