@@ -158,6 +158,13 @@ header {
 
     #section-with-services {
         max-width: 100%;
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .title-box {
+        position: relative !important;
+        padding-bottom: 3rem;
     }
 
     .service-box {
