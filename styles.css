@@ -193,6 +193,47 @@ header {
     #work-examples-carousel {
         flex-wrap: wrap;
     }
+
+    /* mobile adjustments for about.html page*/
+
+    #about-me-section-separate h1 {
+        font-size: 5rem !important;
+        margin-top: 0 !important;
+    }
+
+    #about-me-container {
+        flex-wrap: wrap;
+    }
+
+    #about-me-text-box p {
+        width: 100% !important;
+    }
+
+    #skills-service-section {
+        flex-wrap: wrap;
+        margin-bottom: 0 !important;
+        padding-bottom: 1rem !important;
+        gap: 2rem !important;
+    }
+
+    #skills-service-section p {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    #skills-servives-container {
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+
+    #education-section {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .title-box h2 {
+        position: relative !important;
+    }
 }
 
 .mobile-design {
@@ -865,8 +906,8 @@ footer a:hover {
 }
 
 #about-me-image {
-    width: 490px;
-    height: 300px;
+    width: 30rem;
+    height: 19rem;
     border: 2px solid var(--black);
     border-radius: var(--image-corner);
     filter: grayscale();
