@@ -194,7 +194,7 @@ header {
         flex-wrap: wrap;
     }
 
-    /* mobile adjustments for about.html page*/
+    /* mobile adjustments for about.html page */
 
     #about-me-section-separate h1 {
         font-size: 5rem !important;
@@ -257,7 +257,7 @@ header {
         padding-bottom: 0 !important;
     }
 
-    /* mobile adjustments for WORK page */
+    /* mobile adjustments for work.html page */
 
     #my-work-section-separate {
         padding-top: 1rem !important;
@@ -284,6 +284,27 @@ header {
     
     blockquote {
         font-size: 1rem !important;
+    }
+
+    /* mobile adjustments for the contact form */
+
+
+    #main-section-contact {
+        display: inline;
+    }
+    
+    #main-section-contact h2 {
+        padding: 2rem 2rem !important;
+    }
+
+    #contact-form {
+        margin-right: 3rem !important;
+        margin-left: 2rem !important;
+    }
+    
+    #icons-half {
+        margin-left: 2rem !important;
+        margin-bottom: 2rem;
     }
 }
 
