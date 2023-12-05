@@ -219,6 +219,7 @@ header {
     #skills-service-section p {
         width: 100% !important;
         margin-top: 0 !important;
+        width: 100%;
     }
 
     #skills-servives-container {
@@ -244,6 +245,16 @@ header {
 
     #ideas-in-mind h1 {
         margin-top: 1rem !important;
+        font-size: 4rem !important;
+    }
+
+    .skills-services-box img {
+        padding-bottom: .2rem !important;
+    }
+
+    .skills-services-box p {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
     }
 }
 
