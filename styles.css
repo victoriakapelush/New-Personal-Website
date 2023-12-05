@@ -256,6 +256,18 @@ header {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important;
     }
+
+    /* mobile adjustments for WORK page */
+
+    #my-work-section-separate {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    .work-box-item img {
+        height: auto !important;
+        width: 30rem;
+    }
 }
 
 .mobile-design {
