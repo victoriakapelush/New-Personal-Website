@@ -654,6 +654,10 @@ h1 {
     position: relative;
 }
 
+#comp-img:hover {
+    filter: none;
+}
+
 #boom-icon {
     right: 60%;
     width: 220px;
