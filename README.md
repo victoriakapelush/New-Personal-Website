@@ -1,4 +1,5 @@
 # New-Personal-Website
-My website - portfolio
 
-Visit website at victoriakapelush.com
+Personal website created with HTML, CSS, and JavaScript.
+
+Visit website [here](https://victoriakapelush.com).
