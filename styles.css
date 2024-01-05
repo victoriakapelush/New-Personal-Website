@@ -1333,6 +1333,7 @@ blockquote {
     align-items: center;
     padding: .75rem 2rem;
     gap: 1.5rem;
+    color: var(--black);
 }
 
 .arrow-next-project img {
@@ -1372,6 +1373,7 @@ blockquote {
     box-shadow: 1px 1px 3px #0008;
     transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
     z-index: 0;
+    filter: grayscale();
   }
   
   .photo-gallery img:hover {
@@ -1382,6 +1384,7 @@ blockquote {
     /* ensures that image gets on top of stack at the start of "popping" animation
        and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
     z-index: 999;
+    filter: none;
   }
   
   .photo-gallery img:nth-last-child(5):first-child {
