@@ -1145,23 +1145,29 @@ footer a:hover {
 }
 
 .work-box-item img {
-    object-fit: fill;
-    border: 2px solid #000;
-    border-radius: 10px;
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    height: auto;
     filter: grayscale();
-    height: 25rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .work-box-item img:hover {
     filter: none;
+    transition: transform 1.3s ease;
+    transform: scale(1.2);
+}
+
+.work-box-item > div {
+    border: 2px solid #000;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 35rem;
+    height: 19rem; 
 }
 
 .work-box-item {
     gap: .5rem;
-    overflow: hidden;
 }
 
 /* separate html page about my blog */
@@ -1247,4 +1253,149 @@ blockquote {
     header {
       font-size: 16px;
     }
+  }
+
+/* SEPARATE PAGE FOR ALL MY PROJECTS / WORK */
+
+.short-selling-sentence {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    font-family: Montserrat, sans-serif;
+    text-align: right;
+}
+
+.project-info-container {
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-info > p {
+    padding: 0 0;
+}
+
+.project-info a {
+    text-decoration: underline;
+    font-family: Montserrat, sans-serif;
+    color: black;
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.project-info a:hover {
+    text-decoration: overline;
+    color: #000;
+}
+
+.personal-project-image {
+    filter: grayscale();
+    border: 2px solid #000;
+    border-radius: 12px;
+    width: 88%;
+    max-width: 100%;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+.personal-project-image:hover {
+    filter: none;
+}
+
+.project-design-info-container {
+    font-family: Montserrat, sans-serif;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.project-design-container {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.project-design-container div {
+    font-size: 1rem;
+}
+
+.arrow-next-project {
+    position: relative;
+    border: 1px solid black;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    align-items: center;
+    padding: .75rem 2rem;
+    gap: 1.5rem;
+}
+
+.arrow-next-project img {
+    width: 44px;
+    transition: transform 0.3s ease-out;
+}
+
+.arrow-next-project:hover {
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+.arrow-next-project:hover img {
+    transform: translate(6px, -6px); /* Adjust the values for the desired movement */
+}
+
+.personal-project-link-to-next {
+    text-decoration: none;
+}
+
+.personal-project-link-to-next:hover {
+    text-decoration: none;
+}
+
+.photo-gallery p {
+    height: 12rem;
+    width: 30rem;
+    margin: 100px auto;
+    position: relative;
+  }
+  
+  .photo-gallery img {
+    height: 8rem;
+    position: absolute;
+    left: 0;
+    offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+    box-shadow: 1px 1px 3px #0008;
+    transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
+    z-index: 0;
+  }
+  
+  .photo-gallery img:hover {
+    transform: scale(3);
+    /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
+    offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
+    box-shadow: 3px 4px 10px #0006;
+    /* ensures that image gets on top of stack at the start of "popping" animation
+       and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
+    z-index: 999;
+  }
+  
+  .photo-gallery img:nth-last-child(5):first-child {
+    offset-distance: 0%;
+  }
+  .photo-gallery img:nth-last-child(4):nth-child(2) {
+    offset-distance: 25%;
+  }
+  .photo-gallery img:nth-last-child(3):nth-child(3) {
+    offset-distance: 51%;
+  }
+  .photo-gallery img:nth-last-child(2):nth-child(4) {
+    offset-distance: 75%;
+  }
+  .photo-gallery img:last-child:nth-child(5) {
+    offset-distance: 100%;
   }
