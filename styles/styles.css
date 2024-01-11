@@ -417,10 +417,6 @@ p {
     padding-bottom: 1rem;
 }
 
-.fade-in {
-
-}
-
 .divider {
     height: 2px;
     max-width: 100%;
@@ -537,13 +533,12 @@ h1 {
     width: 300px;
     border-radius: 230px 230px 28px 28px;
     height: 350px;
-    filter: grayscale();
     object-fit: cover;
     border: 2px solid #000; 
 }
 
 #my-photo:hover {
-    filter: none;
+    filter: grayscale();
 }
 
 #section-with-photo {
@@ -682,7 +677,6 @@ h1 {
     z-index: 5;
     width: 25rem;
     height: 31rem;
-    filter: grayscale();
     object-fit: cover;
     border: 2px solid #000;
     border-radius: 16px;
@@ -691,7 +685,7 @@ h1 {
 }
 
 #comp-img:hover {
-    filter: none;
+    filter: grayscale();
 }
 
 #boom-icon {
@@ -717,7 +711,7 @@ h1 {
     justify-self: start;
     justify-content: space-between;
     align-self: center;
-    max-width: 600px;
+    width: 60%;
 }
 
 #text-paragraph-aboutme p {
@@ -755,6 +749,7 @@ h1 {
     justify-content: space-between;
     gap: 4rem;
     height: auto;
+    overflow: visible;
 }
 
 #work-examples-carousel img {
@@ -784,12 +779,11 @@ h1 {
 .work-example {
     text-align: left;
     color: var(--black);
-    white-space: nowrap;
     justify-content: start;
+    width: 30rem;
 }
 
 .work-example img {
-    filter: grayscale();
     border: 2px solid var(--black);
     border-radius: 12px;
     width: 100%;
@@ -1012,24 +1006,22 @@ footer a:hover {
 }
 
 #about-me-text-box p {
-    width: 60%;
+    width: 90%;
     margin: 0 0;
     padding: 0 0;
 }
 
 #about-me-image {
-    width: 30rem;
-    height: 19rem;
+    width: 20rem;
     border: 2px solid var(--black);
     border-radius: var(--image-corner);
-    filter: grayscale();
     object-fit: cover;
     margin: 0 0;
     padding: 0 0;
 }
 
 #about-me-image:hover {
-    filter: none;
+    filter: grayscale();
 }
 
 #about-me-container {
@@ -1247,17 +1239,12 @@ footer a:hover {
 }
 
 .article-general img {
-    filter: grayscale();
     border: 2px solid #000;
     border-radius: 12px;
     height: 47rem;
     width: 57rem;
     max-width: 100%;
     margin: 2rem auto;
-}
-
-.article-general img:hover {
-    filter: none;
 }
 
 .article-general ul, .article-general ol {
@@ -1324,17 +1311,12 @@ blockquote {
 }
 
 .personal-project-image {
-    filter: grayscale();
     border: 2px solid #000;
     border-radius: 12px;
     width: 88%;
     max-width: 100%;
     margin: 3rem auto;
     justify-content: center;
-}
-
-.personal-project-image:hover {
-    filter: none;
 }
 
 .project-design-info-container {
@@ -1409,7 +1391,6 @@ blockquote {
     box-shadow: 1px 1px 3px #0008;
     transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77,-1.17,.75,.84),box-shadow .3s, z-index .3s;
     z-index: 0;
-    filter: grayscale();
   }
   
   .photo-gallery img:hover {
@@ -1420,7 +1401,6 @@ blockquote {
     /* ensures that image gets on top of stack at the start of "popping" animation
        and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
     z-index: 999;
-    filter: none;
   }
   
   .photo-gallery img:nth-last-child(5):first-child {
