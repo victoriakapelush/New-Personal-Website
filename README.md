@@ -3,7 +3,7 @@
 ### Overview
 
 This repository contains the source code for my personal portfolio website. The website showcases my skills, projects, and provides information about me.
-Personal website created with HTML, CSS, and JavaScript. 🌟 Visit it [right here](https://victoriakapelush.com).
+Personal website created with HTML, CSS, and JavaScript.
 
 ### Features 🛠️
 
